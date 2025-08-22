@@ -1,7 +1,7 @@
 numpy>=1.24.0
 pandas==2.2.2
 scipy>=1.13.0,<1.14.0
-akshare
+akshare>=1.16.56
 tqdm==4.67.1
 openai==0.28.0
 requests==2.32.3
@@ -20,12 +20,15 @@ flask_swagger_ui
 sqlalchemy
 flask-cors
 flask-caching
+pymysql==1.1.0
 # 新增依赖
 gunicorn==20.1.0  # 生产环境WSGI服务器
-PyYAML==6.0  # YAML支持
+PyYAML>=6.0.1  # YAML支持
 scikit-learn==1.2.2  # 机器学习库(用于预测模型)
-statsmodels==0.13.5  # 统计模型(用于时间序列分析)
+statsmodels>=0.14.0  # 统计模型(用于时间序列分析)
 pytest==7.3.1  # 测试框架
+tavily-python # Tavily客户端库
+pandas-market-calendars>=5.1.1  # 专业的金融市场交易日历库
 
 # 部署工具
 supervisor==4.2.5  # 进程管理
